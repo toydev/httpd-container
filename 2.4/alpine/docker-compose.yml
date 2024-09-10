@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  apache-httpd-custom:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: apache-httpd-custom:latest
+    ports:
+      - 8080:80
